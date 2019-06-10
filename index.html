@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+  <title>Stephen Katz</title>
+</head>
+
+<body>
+  <div id="menu-bar">
+    <div id="menu" onclick="onClickMenu()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav">
+      <li><a href="#home" onclick="onClickMenu()">Home</a></li>
+      <li><a href="#about" onclick="onClickMenu()">About</a></li>
+      <!-- <li><a href="#blog" onclick="onClickMenu()">Blog</a></li>
+        <li><a href="#gallery" onclick="onClickMenu()">Gallery</a></li> -->
+      <li><a href="#contact" onclick="onClickMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="menu-bg" id="menu-bg"></div>
+
+  <section id="home" class="home">
+    <div id="arrow-icon">
+      <a href="#about">
+        <div id="arrow"></div>
+      </a>
+    </div>
+
+    <canvas id="myCanvas"></canvas>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-content">
+      <div data-aos="fade-up-right" class="about-info">
+        <h3>
+          — I'm Stephen Katz, a college student studying computer engineering
+          at the New Jersey Institute of Technology.
+        </h3>
+        <p>
+          I've always had a passion for technology, so I decided to dedicate
+          my free time to learning and keeping up to date with the current
+          trends. My hobbies include web design, sneakers, music, futurology,
+          and of course video games. If you are looking for someone to manage
+          or design your website I am your guy. My contact info is below, feel
+          free to contact me for pricing.
+        </p>
+      </div>
+      <div data-aos="fade-up-right">
+        <img class="about-picture" src="about-picture.jpg" alt="Jellyfish" />
+      </div>
+      <div data-aos="fade-up-left" class="spotify">
+        <h4>What I'm Listening To</h4>
+        <div>
+          <iframe src="https://open.spotify.com/embed/user/1236014732/playlist/4Z8Yhu02mw3AwrxHSlTIb0" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div data-aos="fade-up-left" class="articles">
+        <h4>Some things I find interesting!</h4>
+        <ul>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/279827959">
+              I, Pastafari Documentary Trailer (2019)</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.youtube.com/watch?v=B0W6jCOggWQ&feature=youtu.be">Elton John Creating Tiny Dancer in
+              1970</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.youtube.com/watch?v=c6_tnnBW5ns&feature=youtu.be">Terraforming Mars</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://imgur.com/gallery/voutF">Sorting Algorithms
+              Visualized</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8zbpTUZ-6n0">Dizzy going
+              off in Apex Legends</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="blog">
+      <h1>blog</h1>
+    </section>
+
+    <section id="gallery">
+      <h1>Gallery</h1>
+    </section> -->
+
+  <section id="contact" class="contact">
+    <div class="contact-info">
+      <h3 data-aos="fade-up">Email: stephenjk41@gmail.com</h3>
+    </div>
+    <div class="resume-container" data-aos="fade-up">
+
+      <div class="resume">
+        <a target="_blank" rel="noopener noreferrer" href="/assets/Stephen_Katz_Resume.pdf">
+          <div>Here's my resume!</div>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer" data-aos="fade-up">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/stephenkatz41"
+        class="fa fa-facebook"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/katz_stephen" class="fa fa-twitter"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/stephen-katz/"
+        class="fa fa-linkedin"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stephen_katz_/"
+        class="fa fa-instagram"></a>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="canvasGrow.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="singlePageNav.js"></script>
+  <script type="application/javascript">
+    jQuery(function () {
+      jQuery(".nav").singlePageNav();
+    });
+
+    $(function () {
+      var documentEl = $(document),
+        fadeElem = $(".home");
+
+      documentEl.on("scroll", function () {
+        var currScrollPos = documentEl.scrollTop();
+
+        fadeElem.each(function () {
+          var $this = $(this),
+            elemOffsetTop = $this.offset().top;
+          if (currScrollPos > elemOffsetTop)
+            $this.css("opacity", 1 - (currScrollPos - elemOffsetTop) / 800);
+        });
+      });
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
